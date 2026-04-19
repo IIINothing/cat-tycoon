@@ -19,6 +19,8 @@ config/features=PackedStringArray("4.6", "GL Compatibility")
 SignalBus="*uid://bmce5thfs6y50"
 GameState="*uid://ddjx6maouyuwq"
 TimeManager="*uid://dv2pqltxq5ooh"
+EconomyManager="*uid://cdru0w8gx7ft3"
+SaveSystem="*uid://cjn4uk6qgbcb7"
 
 [display]
 
