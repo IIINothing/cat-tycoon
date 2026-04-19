@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="UpgradeData" format=3 uid="uid://dhaghl7q5oaj2"]
+
+[ext_resource type="Script" uid="uid://dj2x3mx8pc3oe" path="res://scripts/data/upgrade_data.gd" id="1_xg4b8"]
+[ext_resource type="Resource" uid="uid://bqb335d67ot87" path="res://resources/businesses/shop_basic.tres" id="1_yci0n"]
+
+[resource]
+script = ExtResource("1_xg4b8")
+id = &"shop_better_shelves"
+display_name = "Estanterías Decentes"
+description = "Las cajas de atún ya no se caen solas. Los clientes vuelven."
+applies_to = ExtResource("1_yci0n")
+effect_value = 1.5
+cost_clean = 150
+metadata/_custom_type_script = "uid://dj2x3mx8pc3oe"

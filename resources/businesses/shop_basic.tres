@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BusinessData" format=3 uid="uid://bqb335d67ot87"]
+
+[ext_resource type="Script" uid="uid://msdmpjbddkse" path="res://scripts/data/business_data.gd" id="1_02qo2"]
+
+[resource]
+script = ExtResource("1_02qo2")
+id = &"shop_basic"
+display_name = "Tienda del Callejón"
+description = "Un local pequeño y polvoriento. Perfecto para empezar... y para esconder cosas."
+base_income_per_tick = 5
+can_host_shadow_ops = true
+laundering_capacity_per_day = 500
+laundering_efficiency = 60
+metadata/_custom_type_script = "uid://msdmpjbddkse"

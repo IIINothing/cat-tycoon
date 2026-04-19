@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="UpgradeData" format=3 uid="uid://coejuhf3pte3"]
+
+[ext_resource type="Resource" uid="uid://bqb335d67ot87" path="res://resources/businesses/shop_basic.tres" id="1_3s3rx"]
+[ext_resource type="Script" uid="uid://dj2x3mx8pc3oe" path="res://scripts/data/upgrade_data.gd" id="1_30w82"]
+[ext_resource type="Resource" uid="uid://bbqy2gnayyakh" path="res://resources/upgrades/upgrade_shop_hidden_room.tres" id="2_b3yet"]
+
+[resource]
+script = ExtResource("1_30w82")
+id = &"shop_bribed_officer"
+display_name = "Oficial Sobornado"
+description = "El inspector Mishi recibe su \"donación mensual\". La policía mira para otro lado."
+applies_to = ExtResource("1_3s3rx")
+upgrade_type = 3
+effect_value = 0.3
+cost_dirty = 800
+requires = ExtResource("2_b3yet")
+metadata/_custom_type_script = "uid://dj2x3mx8pc3oe"

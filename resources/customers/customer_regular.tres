@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://cwp50fg8ir6fa"]
+
+[ext_resource type="Script" uid="uid://byajixhqdc44e" path="res://scripts/data/product_data.gd" id="1_y357s"]
+[ext_resource type="Resource" uid="uid://dbuy6hl4nwnc8" path="res://resources/products/product_tuna_can.tres" id="2_mnfbk"]
+[ext_resource type="Script" uid="uid://c6bhu6pwbda65" path="res://scripts/data/customer_data.gd" id="2_rc7n2"]
+
+[resource]
+script = ExtResource("2_rc7n2")
+id = &"cat_regular"
+display_name = "Gato Común"
+avg_budget = 15
+purchase_probability = 0.7
+preferred_products = Array[ExtResource("1_y357s")]([ExtResource("2_mnfbk")])
+metadata/_custom_type_script = "uid://c6bhu6pwbda65"

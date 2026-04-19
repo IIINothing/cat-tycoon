@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="BusinessData" format=3 uid="uid://dr2517wgfbmny"]
+
+[ext_resource type="Script" uid="uid://msdmpjbddkse" path="res://scripts/data/business_data.gd" id="1_6pup8"]
+
+[resource]
+script = ExtResource("1_6pup8")
+id = &"hotel_basic"
+display_name = "Hotel Bigotes"
+description = "Un hotel de lujo para gatos selectos. Ideal para lavar grandes sumas."
+purchase_cost = 5000
+base_income_per_tick = 50
+can_host_shadow_ops = true
+laundering_capacity_per_day = 8000
+laundering_efficiency = 85
+metadata/_custom_type_script = "uid://msdmpjbddkse"

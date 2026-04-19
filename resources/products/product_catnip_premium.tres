@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ProductData" format=3 uid="uid://c62jbf7eru65u"]
+
+[ext_resource type="Script" uid="uid://byajixhqdc44e" path="res://scripts/data/product_data.gd" id="1_w6gop"]
+
+[resource]
+script = ExtResource("1_w6gop")
+id = &"catnip_premium"
+display_name = "Catnip \"Cristal de Luna\""
+description = "Pureza farmacéutica. Clientes de gama alta. Mucho heat."
+category = 1
+sale_price = 300
+production_cost = 60
+heat_per_unit = 5.0
+production_time_seconds = 30.0
+metadata/_custom_type_script = "uid://byajixhqdc44e"

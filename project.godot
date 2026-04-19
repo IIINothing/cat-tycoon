@@ -11,7 +11,12 @@ config_version=5
 [application]
 
 config/name="CatTycoon"
+run/main_scene="uid://bi4egope3jq2f"
 config/features=PackedStringArray("4.6", "GL Compatibility")
+
+[autoload]
+
+SignalBus="*uid://bmce5thfs6y50"
 
 [display]
 

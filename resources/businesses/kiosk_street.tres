@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="BusinessData" format=3 uid="uid://dv4m07burdcnt"]
+
+[ext_resource type="Script" uid="uid://msdmpjbddkse" path="res://scripts/data/business_data.gd" id="1_d4ccm"]
+
+[resource]
+script = ExtResource("1_d4ccm")
+id = &"kiosk_street"
+display_name = "Kiosco Callejero"
+description = "Un tenderete diminuto. Solo sirve para vender atún a gatos honestos."
+base_income_per_tick = 2
+laundering_efficiency = 0
+metadata/_custom_type_script = "uid://msdmpjbddkse"

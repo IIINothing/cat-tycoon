@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ProductData" format=3 uid="uid://bc80p0wipm17p"]
+
+[ext_resource type="Script" uid="uid://byajixhqdc44e" path="res://scripts/data/product_data.gd" id="1_4x5v4"]
+
+[resource]
+script = ExtResource("1_4x5v4")
+id = &"warm_milk "
+display_name = "Leche Tibia Artesanal"
+description = "Servida a temperatura exacta. Los gatos de barrio alto pagan bien."
+sale_price = 25
+production_cost = 8
+metadata/_custom_type_script = "uid://byajixhqdc44e"

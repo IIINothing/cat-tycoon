@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="CustomerData" format=3 uid="uid://cbc2bgm75nrjv"]
+
+[ext_resource type="Script" uid="uid://byajixhqdc44e" path="res://scripts/data/product_data.gd" id="1_npvjv"]
+[ext_resource type="Script" uid="uid://c6bhu6pwbda65" path="res://scripts/data/customer_data.gd" id="2_8xpve"]
+[ext_resource type="Resource" uid="uid://cbn7ldr2pcik8" path="res://resources/products/product_catnip_basic.tres" id="2_jvrxn"]
+
+[resource]
+script = ExtResource("2_8xpve")
+id = &"cat_addict"
+display_name = "Gato Inquieto"
+archetype = 2
+avg_budget = 100
+purchase_probability = 0.95
+preferred_products = Array[ExtResource("1_npvjv")]([ExtResource("2_jvrxn")])
+can_buy_shadow = true
+metadata/_custom_type_script = "uid://c6bhu6pwbda65"
