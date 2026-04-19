@@ -1,68 +1,69 @@
 extends Node
 
 ## Bus central de señales globales del juego.
-## Cualquier sistema puede emitir o escuchar estas señales sin conocer a otros sistemas.
-## Registrado como Autoload con el nombre "SignalBus".
+## ...
 
 # ═══════════════════════════════════════════════════════════
 # ECONOMÍA
 # ═══════════════════════════════════════════════════════════
 
 ## Emitido cuando cambia el balance LIMPIO. new_balance es el valor actualizado.
+@warning_ignore("unused_signal")
 signal clean_balance_changed(new_balance: int)
 
 ## Emitido cuando cambia el balance SUCIO.
+@warning_ignore("unused_signal")
 signal dirty_balance_changed(new_balance: int)
 
 ## Emitido cuando el jugador intenta gastar pero no tiene fondos.
-## Útil para que la UI muestre feedback ("No tienes suficiente dinero").
+@warning_ignore("unused_signal")
 signal transaction_failed(reason: String)
 
 # ═══════════════════════════════════════════════════════════
 # TIEMPO
 # ═══════════════════════════════════════════════════════════
 
-## Emitido en cada tick del juego. delta es el tiempo real transcurrido.
+@warning_ignore("unused_signal")
 signal game_tick(delta: float)
 
-## Emitido cuando cambia la hora in-game.
+@warning_ignore("unused_signal")
 signal hour_changed(new_hour: int)
 
-## Emitido al completar un día in-game.
+@warning_ignore("unused_signal")
 signal day_ended(day_number: int)
 
 # ═══════════════════════════════════════════════════════════
 # NEGOCIOS
 # ═══════════════════════════════════════════════════════════
 
-## Emitido cuando el jugador compra un nuevo negocio.
+@warning_ignore("unused_signal")
 signal business_purchased(business: BusinessData)
 
-## Emitido cuando se compra una mejora.
+@warning_ignore("unused_signal")
 signal upgrade_purchased(upgrade: UpgradeData)
 
 # ═══════════════════════════════════════════════════════════
 # CLIENTES
 # ═══════════════════════════════════════════════════════════
 
-## Un cliente entró al negocio activo.
+@warning_ignore("unused_signal")
 signal customer_entered(customer: CustomerData)
 
-## Un cliente completó una compra.
+@warning_ignore("unused_signal")
 signal customer_purchased(customer: CustomerData, product: ProductData, amount: int)
 
-## Un cliente se fue sin comprar.
+@warning_ignore("unused_signal")
 signal customer_left_empty(customer: CustomerData)
 
 # ═══════════════════════════════════════════════════════════
 # SUBMUNDO Y RIESGO
 # ═══════════════════════════════════════════════════════════
 
-## El nivel de heat cambió.
+@warning_ignore("unused_signal")
 signal heat_changed(new_heat: float)
 
-## Una redada policial es inminente (cuenta regresiva para esconder evidencia).
+@warning_ignore("unused_signal")
 signal raid_incoming(seconds_until_raid: float)
 
-## Dinero fue lavado exitosamente.
+@warning_ignore("unused_signal")
 signal money_laundered(dirty_amount: int, clean_amount_received: int)

@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://64vnyrqrm1vp"]
+
+[sub_resource type="GDScript" id="GDScript_x2egt"]
+script/source = "extends Node
+
+func _ready() -> void:
+	print(\"=== Test GameState ===\")
+	print(\"Dinero limpio inicial: \", GameState.clean_money)
+	print(\"Día inicial: \", GameState.current_day)
+	
+	# Modifico algunos valores
+	GameState.clean_money = 100
+	GameState.heat_level = 25.5
+	
+	print(\"Dinero limpio tras cambio: \", GameState.clean_money)
+	print(\"Heat level: \", GameState.heat_level)
+	print(\"Posee algún negocio: \", GameState.owned_businesses.size())
+	
+	# Pruebo el reset
+	GameState.reset_to_defaults()
+	print(\"Tras reset, dinero limpio: \", GameState.clean_money)
+	print(\"Tras reset, heat: \", GameState.heat_level)
+"
+
+[node name="TestGameState_tscn" type="Node2D" unique_id=2109034757]
+script = SubResource("GDScript_x2egt")
